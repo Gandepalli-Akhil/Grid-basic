@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Grid Basics</title>
+    <style>
+      body{
+        width:100vw;
+        height:100vh;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content:center;
+        gap:40px;
+        background-color: rgb(195, 209, 209);
+      }
+      .Container{
+        display: grid;
+        height:500px;
+        width:600px;
+        grid-template-columns:2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        border-radius: 10px;
+        background-color: #fff;
+        align-items: stretch;
+        justify-items:center;
+        grid-row-gap:10px;
+        grid-column-gap:20px;
+      }
+       .Container2{
+        display: grid;
+        height:500px;
+        width:600px;
+        grid-template-columns:2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        border-radius: 10px;
+        background-color: #fff;
+        align-items:center;
+        justify-items:stretch;
+        grid-gap:20px;
+      }
+      .items{
+        background-color: darkorange;
+        border-radius:5px;
+        padding:10px;
+        display: flex;
+        align-items:center;
+        justify-content:flex-start;
+      }
+    </style>
+</head>
+<body>
+    <div class="Container">
+          <div class="items">item1</div>
+          <div class="items">item2</div>
+          <div class="items">item3</div>
+          <div class="items">item4</div>
+          <div class="items">item5</div>
+    </div>
+    <div class="Container2">
+          <div class="items">item1</div>
+          <div class="items">item2</div>
+          <div class="items">item3</div>
+          <div class="items">item4</div>
+          <div class="items">item5</div>
+    </div>
+</body>
+</html>
